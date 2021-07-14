@@ -1,0 +1,66 @@
+@use '../helpers/variables' as var;
+
+#header {
+  background: var.$linear;
+  padding: 41px 0;
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .header__logo a,
+    i {
+      color: var.$color-light;
+      font-size: 24px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+.input-search {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  img {
+    padding: 0 20px;
+  }
+
+  form ::placeholder {
+    color: var.$color-light;
+    opacity: 0.5;
+  }
+
+  form input {
+    color: var.$color-light;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: var.$secondary-font;
+    width: 800px;
+    height: 65px;
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 765px) {
+  .header__nav {
+    margin-bottom: 40px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .input-search form input {
+    height: 40px;
+    font-size: 14px;
+    width: 280px;
+    padding: 6px 0;
+  }
+}

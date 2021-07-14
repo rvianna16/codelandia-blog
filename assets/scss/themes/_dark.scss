@@ -1,0 +1,50 @@
+@use '../helpers/variables' as var;
+
+//  {
+//   #header {
+//     background-color: var.$color-dark;
+//   }
+// }
+
+//body color//
+body[data-theme="dark"] {
+  background-color: var.$bg-color-dark;
+}
+
+[data-theme="dark"] {
+  //header//
+  #header {
+    background: var.$color-dark;
+
+    .header__logo a,
+    i {
+      color: var.$secondary-color;
+    }
+  }
+
+  #main {
+    article {
+      background-color: var.$color-dark;
+    }
+
+    .article__info {
+      small {
+        color: var.$text-color-dark;
+      }
+
+      .heart {
+        color: var.$primary-color;
+      }
+    }
+
+    .article__content {
+      h2 {
+        color: var.$title-color-dark;
+      }
+
+      p {
+        color: var.$text-color-dark;
+      }
+    }
+  }
+}

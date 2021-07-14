@@ -1,0 +1,23 @@
+@use '../helpers/variables' as var;
+
+body {
+  background-color: var.$bg-color;
+  font-family: var.$primary-font;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url(/assets/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(/assets/fonts/LexendDeca-Regular.ttf);
+}

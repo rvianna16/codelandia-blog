@@ -1,0 +1,19 @@
+$primary-color: #3ea1db;
+$secondary-color: #574ae8;
+$linear: linear-gradient(90deg, $secondary-color 0%, $primary-color 100%);
+
+// light theme //
+$bg-color: #f3f5f7;
+$color-light: #fff;
+$title-color: #313131;
+$text-color: #b6b6b6;
+
+// dark theme //
+$bg-color-dark: #181818;
+$color-dark: #202020;
+$title-color-dark: #fff;
+$text-color-dark: #e5e5e5;
+
+// Font Style //
+$primary-font: "Lexend Deca";
+$secondary-font: "Inter Medium";
